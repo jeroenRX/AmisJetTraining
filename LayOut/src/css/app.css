@@ -1,0 +1,29 @@
+/*
+    Document   : override
+    Created on : 10-04-2018
+    Author     : AMIS
+    Description:
+        This is where any of your application specific styles should be included
+*/
+#container{
+    border: 2px solid darkgrey;
+}
+#header{
+    background-color: #f7d053;
+}
+
+#content{
+    background-color: #a75dba;
+}
+
+#content1 {
+    background-color: #68c182;
+}
+
+#content2 {
+    background-color: #267db3;
+}
+
+#footer {
+    background-color: #ed6647;
+}

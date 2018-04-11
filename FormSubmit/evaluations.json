@@ -1,0 +1,84 @@
+{
+  "evaluations": [
+    {
+      "name": "Oracle JET 101",
+      "date": "2018-04-01",
+      "instructor": "Laura Broekstra",
+      "studentname": "Nora Bran",
+      "grade": 8,
+      "remarks": "Great course!",
+      "rating": 9,
+      "id": 1
+    },
+    {
+      "name": "Oracle JET Soar",
+      "date": "2018-02-02",
+      "instructor": "Jeroen Rijnboutt",
+      "studentname": "Jonas Amram",
+      "grade": 6,
+      "remarks": "Very interesting",
+      "rating": 7,
+      "id": 2
+    },
+    {
+      "name": "Oracle JET Soar Higher",
+      "date": "2018-03-17",
+      "instructor": "Laura Broekstra",
+      "studentname": "Lara Thursten",
+      "grade": 7,
+      "remarks": "A lot of information",
+      "rating": 7,
+      "id": 3
+    },
+    {
+      "name": "JavaScript 101",
+      "date": "2018-03-21",
+      "instructor": "Jeroen Rijnboutt",
+      "studentname": "Hendrik Lilli",
+      "grade": 9,
+      "remarks": "Good start",
+      "rating": 8,
+      "id": 4
+    },
+    {
+      "name": "JavaScript 2.0",
+      "date": "2018-04-03",
+      "instructor": "Jeroen Rijnboutt",
+      "studentname": "Alex Daley",
+      "grade": 7,
+      "remarks": "undefined",
+      "rating": 6,
+      "id": 5
+    },
+    {
+      "name": "HTML / CSS 3.0",
+      "date": "2018-01-18",
+      "instructor": "Laura Broekstra",
+      "studentname": "Tamara Monte",
+      "grade": 4,
+      "remarks": "Not great",
+      "rating": 2,
+      "id": 6
+    },
+    {
+      "name": "CSS Tricks",
+      "date": "2018-02-20",
+      "instructor": "Laura Broekstra",
+      "studentname": "Cindy Jordail",
+      "grade": 9,
+      "remarks": "So much fun!",
+      "rating": 8,
+      "id": 7
+    },
+    {
+      "name": "Asynch JavaScript",
+      "date": "2018-02-24",
+      "instructor": "Jeroen Rijnboutt",
+      "studentname": "Ada Leep",
+      "grade": 6,
+      "remarks": "undefined",
+      "rating": 7,
+      "id": 8
+    }
+  ]
+}

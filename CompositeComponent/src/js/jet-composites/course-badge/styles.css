@@ -1,0 +1,31 @@
+course-badge:not(.oj-complete){
+    visibility: hidden;
+  }
+  course-badge{
+    display : block;
+    width : 210px;
+    height: 310px;
+    margin : 10px;
+  }
+  course-badge .badge-face {
+    height : 100%;
+    width : 100%;
+    background-color : #80C3C8;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 25px;
+  }
+  course-badge .badge-image {
+    height : 130px;
+    width : 130px;
+    background-color : white;
+    border-radius: 50%;
+  }
+
+  course-badge .course-name {
+    font-size: 30px; 
+  }
+
+  course-badge .course-grade {
+    font-size: 60px; 
+  }

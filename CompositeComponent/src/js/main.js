@@ -52,7 +52,7 @@ requirejs.config(
  * objects in the callback
  */
 require(['ojs/ojcore', 'knockout', 'appController', 'ojs/ojknockout',
-  'ojs/ojmodule', 'ojs/ojrouter', 'ojs/ojnavigationlist', 'ojs/ojbutton', 'ojs/ojtoolbar', 'jet-composites/course-badge/loader'],
+  'ojs/ojmodule', 'ojs/ojrouter', 'ojs/ojnavigationlist', 'ojs/ojbutton', 'ojs/ojtoolbar', 'jet-composites/course-badge/loader', 'jet-composites/example-component/loader'],
   function (oj, ko, app) { // this callback gets executed when all required modules are loaded
 
     $(function() {

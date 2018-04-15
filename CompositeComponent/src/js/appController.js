@@ -57,9 +57,9 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
 
       // Header
       // Application Name used in Branding Area
-      self.appName = ko.observable("Knockout Application");
+      self.appName = ko.observable("Composite Component Application");
       // User Info used in Global Navigation area
-      self.userLogin = ko.observable("jacen.solo@legends.com");
+      self.userLogin = ko.observable("kyp.durron@legends.com");
 
       // Footer
       function footerLink(name, id, linkTarget) {

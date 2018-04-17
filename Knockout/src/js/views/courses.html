@@ -37,7 +37,7 @@
     <p>Number of hours:
         <strong data-bind="text: chosenNrOfHours"></strong>
     </p>
-    <!-- ko if: chosenDay && chosenField && chosenNrOfHours -->
+    <!-- ko if: summaryVisible() -->
     <div>
         <p>Summary:
             <strong data-bind="text: summary"></strong>

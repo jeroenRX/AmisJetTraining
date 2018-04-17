@@ -29,9 +29,6 @@ define(["ojs/ojcore", "knockout", "jquery"], function(oj, ko, $) {
     this.chosenField = ko.observable();
     this.chosenNrOfHours = ko.observable();
     this.summaryVisible = function() {
-      console.log(
-        this.chosenDay() && this.chosenField() && this.chosenNrOfHours()
-      );
       return this.chosenDay() && this.chosenField() && this.chosenNrOfHours();
     };
 

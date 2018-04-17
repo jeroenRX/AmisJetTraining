@@ -1,0 +1,23 @@
+{
+  "name": "achievement-overview",
+  "displayName": "achievement-overview",
+  "description": "Overview of all badges",
+  "version": "1.0.0",
+  "jetVersion": "4.2.0",
+  "properties": {
+  },
+  "methods": {
+
+  }, 
+  "events": {
+
+  }, 
+  "slots": {
+    "highGrades": {
+      "description": "All badges with grade 8 or higher"
+    },
+    "okGrades": {
+      "description": "All badges with grade 6 to 8"
+    }
+  }
+}

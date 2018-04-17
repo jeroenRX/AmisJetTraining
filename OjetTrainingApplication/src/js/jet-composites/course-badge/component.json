@@ -1,0 +1,18 @@
+{
+  "name": "course-badge",
+  "displayName": "course-badge",
+  "description": "Course badge",
+  "version": "1.0.0",
+  "jetVersion": "4.2.0",
+  "properties": {
+    "courseName" : {
+      "type" : "string"
+    },
+    "courseImage" : {
+      "type" : "string"
+    },
+    "courseGrade" : {
+      "type" : "string"
+    }
+  }
+}

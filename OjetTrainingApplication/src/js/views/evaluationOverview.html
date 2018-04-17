@@ -1,0 +1,9 @@
+<h3>Evaluation overview</h3>
+<oj-table id="evaluationsTable" aria-label="Evaluations Table" data='[[datasource]]' columns="[[columns]]" style='width: 100%; height:100%;'></oj-table>
+
+<!--Additional-->
+<script type="text/html" id="rating">
+  <td>
+    <oj-rating-gauge value='{{$context.row.rating}}' max="10" readonly></oj-rating-gauge>
+  </td>
+</script>

@@ -1,0 +1,7 @@
+achievement-overview:not(.oj-complete){
+  visibility: hidden;
+}
+
+achievement-overview{
+
+}

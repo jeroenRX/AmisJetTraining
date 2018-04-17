@@ -1,0 +1,26 @@
+<h2> Course Dashboard</h2>
+<div id='chart-container'>
+  <div style="padding-left:16px; float: left">
+    <oj-button id="button1" aria-controls="barChart" on-click="[[updateButtonClick]]">Update values</oj-button>
+  </div>
+
+  <div style="padding-left:16px; float: left">
+    <oj-button id="button2" aria-controls="barChart" on-click="[[seriesButtonClick]]">Add/Remove Series</oj-button>
+  </div>
+
+  <div style="padding-left:16px; float: left">
+    <oj-button id="button3" aria-controls="barChart" on-click="[[groupButtonClick]]">Add/Remove Group</oj-button>
+  </div>
+  <br style="clear: left;" />
+
+  <oj-chart id="barChart" type="bar" orientation="[[orientationValue]]" stack="[[stackValue]]" series="[[seriesValue]]" groups="[[groupsValue]]"
+    animation-on-display="auto" animation-on-data-change="auto" style="max-width:500px;width:100%;height:350px;">
+  </oj-chart>
+  <oj-toolbar id="myToolbar" aria-label="Chart Display Options Toolbar" aria-controls="barChart" style="max-width:500px;width:100%;">
+    <!-- vertical/horizontal toggle button -->
+    <span role="separator" aria-orientation="vertical" class="oj-toolbar-separator"></span>
+    <!-- unstacked/stacked toggle button -->
+
+  </oj-toolbar>
+</div>
+<div id="timeline-container">Add timeline</div>

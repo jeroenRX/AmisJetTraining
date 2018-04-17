@@ -1,0 +1,146 @@
+{
+  "technicalCourses": [
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "Apr 1, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e4",
+      "title": "JavaScript 101",
+      "start": "Apr 12, 2018",
+      "description": "Nico Klasens"
+    },
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "Jan 1, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e2",
+      "title": "Oracle JET Soar",
+      "start": "Jan 4, 2018",
+      "description": "Jeroen Rijnboutt"
+    },
+    {
+      "id": "e3",
+      "title": "Oracle JET Soar Higher",
+      "start": "Feb 8, 2018",
+      "end": "Feb 18, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e4",
+      "title": "JavaScript 101",
+      "start": "02/05/2018",
+      "end": "02/15/2018",
+      "description": "Nico Klasens"
+    },
+    {
+      "id": "e5",
+      "title": "JavaScript 2.0",
+      "start": "Mar 15, 2018",
+      "description": "Lucas Jellema"
+    },
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "May 1, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e2",
+      "title": "Oracle JET Soar",
+      "start": "May 4, 2018",
+      "description": "Jeroen Rijnboutt"
+    },
+    {
+      "id": "e3",
+      "title": "Oracle JET Soar Higher",
+      "start": "Jul 8, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e4",
+      "title": "JavaScript 101",
+      "start": "Jul 12, 2018",
+      "description": "Nico Klasens"
+    },
+    {
+      "id": "e5",
+      "title": "JavaScript 2.0",
+      "start": "Sep 15, 2018",
+      "description": "Lucas Jellema"
+    },
+    {
+      "id": "e6",
+      "title": "VBCS",
+      "start": "Sep 18, 2018",
+      "description": "Herman Mensinga"
+    },
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "Oct 1, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e2",
+      "title": "Oracle JET Soar",
+      "start": "Oct 4, 2018",
+      "description": "Jeroen Rijnboutt"
+    },
+    {
+      "id": "e3",
+      "title": "Oracle JET Soar Higher",
+      "start": "Oct 8, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e4",
+      "title": "JavaScript 101",
+      "start": "Nov 12, 2018",
+      "description": "Nico Klasens"
+    },
+    {
+      "id": "e5",
+      "title": "JavaScript 2.0",
+      "start": "Nov 15, 2018",
+      "description": "Lucas Jellema"
+    },
+    {
+      "id": "e6",
+      "title": "VBCS",
+      "start": "Dec 18, 2018",
+      "description": "Herman Mensinga"
+    }
+  ],
+  "lessTechnical": [
+    {
+      "id": "e6",
+      "title": "Agile",
+      "start": "Apr 18, 2018",
+      "description": "Robbrecht van Amerongen"
+    },
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "Jan 1, 2018",
+      "description": "Laura Broekstra"
+    },
+    {
+      "id": "e5",
+      "title": "JavaScript 2.0",
+      "start": "Mar 15, 2018",
+      "description": "Lucas Jellema"
+    },
+    {
+      "id": "e1",
+      "title": "Oracle JET 101",
+      "start": "May 1, 2018",
+      "description": "Laura Broekstra"
+    }
+  ]
+}

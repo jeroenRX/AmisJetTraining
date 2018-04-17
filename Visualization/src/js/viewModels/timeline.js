@@ -10,19 +10,22 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout', 'ojs/ojtimeline'],
   
     function AboutViewModel() {
       var self = this;
-      var items = ko.observableArray();
+      var items1 = ko.observableArray();
+      var items2 = ko.observableArray();
       self.timelineSeries = ko.computed(function () {
-        return [{id: 's1', emptyText: 'No Data.', label:'Talent Launch Courses', items: items()}]
+        return [{id: 's1', emptyText: 'No Data.', label:'Talent Launch Courses - Technical', items: items1()}
+                ]
       });
 
       self.currentDateString = "Apr 17, 2018";
       var currentDate = new Date(self.currentDateString).toISOString();
       self.referenceObjects = [{value: currentDate}];
 
-      $.getJSON("/../js/data/seriesOneData.json",
+      $.getJSON("/../js/data/seriesData.json",
         function(data)
         {
-          items(data);
+          items1(data.technicalCourses);
+          items2(data.lessTechnical);
         }
       );
     };

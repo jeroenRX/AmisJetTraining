@@ -1,0 +1,53 @@
+<html lang="en-us" style="height:100%;" dir="ltr">
+  <head>
+    <title>Visualizations - Timeline</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="../css/images/touchicon.png">
+    <meta name="apple-mobile-web-app-title" content="Oracle JET">
+    <link rel="stylesheet" id="css" href="http://www.oracle.com/webfolder/technetwork/jet/css/libs/oj/v4.2.0/alta/oj-alta-min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!-- Needed for webcomponents issue https://github.com/webcomponents/webcomponentsjs/issues/6 -->
+    <script>
+      if (!document.createElement) {
+        document.createElement = document.constructor.prototype.createElement;
+        document.createElementNS = document.constructor.prototype.createElementNS;
+        document.importNode = document.constructor.prototype.importNode;
+      }
+
+      // The "oj_whenReady" global variable enables a strategy that the busy context whenReady,
+      // will implicitly add a busy state, until the application calls applicationBoostrapComplete
+      // on the busy state context.
+      window["oj_whenReady"] = true;
+    </script>
+    <script src="http://www.oracle.com/webfolder/technetwork/jet/js/libs/require/require.js"></script>
+    <!-- RequireJS bootstrap file -->
+    <script src="../js/main.js"></script>
+    <script src="../js/demo.js"></script>
+  </head>
+  <body class="demo-disable-bg-image">
+    <div id="sampleDemo" style="" class="demo-padding demo-container">
+      <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+        <oj-timeline id='tline' data-bind='attr: {"aria-label": "Single Series Timeline Demo. Current date is " + currentDateString}'
+                     minor-axis='{
+                       "scale": "weeks",
+                       "zoomOrder": ["months", "weeks", "days"]
+                     }'
+                     major-axis.scale='quarters'
+                     start='[[new Date("Jan 1, 2018").toISOString()]]'
+                     end='[[new Date("Dec 31, 2018").toISOString()]]'
+                     selection-mode='single'
+                     reference-objects='[[referenceObjects]]'
+                     selection='["e4"]'
+                     series='[[timelineSeries]]'
+                     style='width:100%;height:350px'>
+        </oj-timeline>
+
+        
+      </div>
+    </div>
+  </body>
+</html>

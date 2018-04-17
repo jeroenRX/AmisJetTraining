@@ -1,0 +1,7 @@
+<achievement-overview>
+    <div slot="customMessage"><h2 data-bind="text: badgeHeader"></h2></div>
+    <!-- ko foreach: courses -->
+    <course-badge slot="badges" course-name="[[name]]" course-image="/css/images/oracle_jet.png" , course-grade="[[grade]]">
+    </course-badge>
+    <!-- /ko -->
+</achievement-overview>

@@ -1,10 +1,3 @@
-/**
- * Copyright (c) 2014, 2018, Oracle and/or its affiliates.
- * The Universal Permissive License (UPL), Version 1.0
- */
-/*
- * Your application specific code will go here
- */
 define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarraytabledatasource',
   'ojs/ojoffcanvas'],
   function(oj, ko) {
@@ -21,25 +14,29 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
        self.router = oj.Router.rootInstance;
        self.router.configure({
          'dashboard': {label: 'Dashboard', isDefault: true},
-         'courses': {label: 'Courses'},
-         'component': {label: 'Component'},
-         'about': {label: 'About'},
+         'schedule': {label: 'Schedule'},
+         'evaluation': {label: 'Evaluation'},
+         'evaluationOverview': {label: 'Evaluation Overview'},
+         'layout': {label: 'Layout'},
          'badges': {label: 'Badges'}
+
        });
       oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
 
       // Navigation setup
       var navData = [
       {name: 'Dashboard', id: 'dashboard',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
-      {name: 'Courses', id: 'courses',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-education-icon-24'},
-      {name: 'Component', id: 'component',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-home-icon-24'},
+      {name: 'Schedule', id: 'schedule',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-catalog-icon-24'},
+       {name: 'Evaluation', id: 'evaluation',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-edit-icon-24'},
+      {name: 'Evaluation Overview', id: 'evaluationOverview',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},
-       {name: 'Badges', id: 'badges',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'},
-      {name: 'About', id: 'about',
-       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24'}
+       {name: 'Layout', id: 'layout',
+        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-library-icon-24'},
+        {name: 'Badges', id: 'badges',
+         iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-education-icon-24'}
       ];
       self.navDataSource = new oj.ArrayTableDataSource(navData, {idAttribute: 'id'});
 
@@ -60,9 +57,9 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
 
       // Header
       // Application Name used in Branding Area
-      self.appName = ko.observable("Composite Component Application");
+      self.appName = ko.observable("Oracle JET Training Application");
       // User Info used in Global Navigation area
-      self.userLogin = ko.observable("kyp.durron@legends.com");
+      self.userLogin = ko.observable("jane.doe@amis.nl");
 
       // Footer
       function footerLink(name, id, linkTarget) {

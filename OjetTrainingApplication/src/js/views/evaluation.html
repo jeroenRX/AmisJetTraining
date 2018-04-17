@@ -1,0 +1,24 @@
+<h3>Submit Form</h3>
+<div id="submitForm">
+    <oj-label for="courseName">Course Name</oj-label>
+    <oj-input-text id="courseName" value="{{courseName}}"></oj-input-text>
+    <oj-label for="courseDate">Course Date</oj-label>
+    <oj-input-date id="courseDate" value='{{courseDate}}'></oj-input-date>
+    <oj-label for="courseInstructor">Course Instructor</oj-label>
+    <oj-select-one id="courseInstructor" value="{{courseInstructor}}" options="{{instructors}}" placeholder="Select course instructor"></oj-select-one>
+    <oj-label for="studentName">Student Name</oj-label>
+    <oj-input-text id="studentName" value="{{studentName}}"></oj-input-text>
+    <oj-label for="studentGrade">Student Grade</oj-label>
+    <oj-input-number id="studentGrade" max="10" min="1" value="{{studentGrade}}"></oj-input-number>
+    <oj-label for="courseRemarks">Remarks</oj-label>
+    <br/>
+    <oj-text-area id="courseRemarks" value="{{courseRemarks}}"></oj-text-area>
+    <oj-label for="courseRating">Rating</oj-label>
+    <oj-slider id="courseRating" value="{{courseRating}}" min="0" max="10"> </oj-slider>
+    <oj-input-text id="ratingPrint" value="{{courseRating}}" readonly></oj-input-text>
+    <div>
+        <oj-button id='submitButton' on-click='[[submitForm]]'>Submit</oj-button>
+    </div>
+    <!--Additional-->
+    <oj-input-text id="thankYou" value="{{thankYou}}" readonly></oj-input-text>
+</div>

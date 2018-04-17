@@ -1,0 +1,7 @@
+<div class="badge-face">
+  <img class="badge-image"
+       data-bind="attr:{src: $props.courseImage, alt: $props.courseName}">
+  <h3 class=course-name><oj-bind-text value="[[$props.courseName]]"></oj-bind-text></h3>
+  <h3>Completed with grade:</h3>
+  <h4 class="course-grade"><oj-bind-text value="[[$props.courseGrade]]"></oj-bind-text></h4>
+</div>

@@ -1,0 +1,69 @@
+<h2>Schedule</h2>
+<table>
+  <tr>
+      <th>Day</th>
+      <th>Course</th>
+      <th>Hours</th>
+  </tr>
+
+  <tr>
+      <td>
+          <select data-bind="options: days, value: chosenDay, optionsCaption: 'No selection'">
+          </select>
+      </td>
+      <td>
+          <select data-bind="options: fields, value: chosenField, optionsCaption: 'No selection'">
+          </select>
+      </td>
+      <td>
+          <select data-bind="options: hours, value: chosenNrOfHours, optionsCaption: 'No selection'">
+          </select>
+      </td>
+  </tr>
+
+</table>
+<br \>
+<p>Day:
+  <strong data-bind="text: chosenDay"></strong>
+</p>
+<p>Course:
+  <strong data-bind="text: chosenField"></strong>
+</p>
+<p>Number of hours:
+  <strong data-bind="text: chosenNrOfHours"></strong>
+</p>
+<!-- ko if: chosenDay && chosenField && chosenNrOfHours -->
+<div>
+  <p>Summary:
+      <strong data-bind="text: summary"></strong>
+  </p>
+</div>
+<!-- /ko -->
+
+<button data-bind="click: addWork">Add commitment to the schedule</button>
+
+<h1>Schedule</h1>
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Course</th>
+    <th>Hours</th>
+  </tr>
+  <tbody data-bind="foreach: schedule">
+      <tr>
+          <td>
+              <span data-bind="text: day">
+              </span>
+          </td>
+          <td>
+              <span data-bind="text: field">
+              </span>
+          </td>
+          <td>
+              <span data-bind="text: nrofhours">
+              </span>
+          </td>
+      </tr>
+  </tbody>
+
+</table>

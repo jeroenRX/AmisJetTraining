@@ -1,11 +1,14 @@
 /**
+ * @license
  * Copyright (c) 2014, 2018, Oracle and/or its affiliates.
  * The Universal Permissive License (UPL), Version 1.0
  */
+/*
+ * Your incidents ViewModel code goes here
+ */
 define(["ojs/ojcore", "knockout", "jquery"], function(oj, ko, $) {
-  function CoursesViewModel() {
+  function ScheduleViewModel() {
     var self = this;
-
     this.days = ko.observableArray([
       "Monday",
       "Tuesday",
@@ -29,9 +32,6 @@ define(["ojs/ojcore", "knockout", "jquery"], function(oj, ko, $) {
     this.chosenField = ko.observable();
     this.chosenNrOfHours = ko.observable();
     this.summaryVisible = function() {
-      console.log(
-        this.chosenDay() && this.chosenField() && this.chosenNrOfHours()
-      );
       return this.chosenDay() && this.chosenField() && this.chosenNrOfHours();
     };
 
@@ -55,5 +55,5 @@ define(["ojs/ojcore", "knockout", "jquery"], function(oj, ko, $) {
     };
   }
 
-  return new CoursesViewModel();
+  return new ScheduleViewModel();
 });

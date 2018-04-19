@@ -21,7 +21,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
        self.router = oj.Router.rootInstance;
        self.router.configure({
          'chart': {label: 'Chart', isDefault: true},
-         'courses': {label: 'Courses'},
+         'schedule': {label: 'Schedule'},
          'customers': {label: 'Customers'},
          'timeline': {label: 'Timeline'}
        });
@@ -31,7 +31,7 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
       var navData = [
       {name: 'Chart', id: 'chart',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
-      {name: 'Courses', id: 'courses',
+      {name: 'Schedule', id: 'schedule',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-education-icon-24'},
       {name: 'Customers', id: 'customers',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24'},

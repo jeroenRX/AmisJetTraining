@@ -21,13 +21,20 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojinputtext', 'ojs/ojlabel', 'o
       ];
 
       self.submitForm = function() {
-        var body = '{"name": "' + self.courseName() + '", "date": "' + self.courseDate() + '", "instructor": "' + self.courseInstructor() + '", "studentname": "' 
-        + self.studentName() + '", "grade":' + self.studentGrade() + ', "remarks": "' + self.courseRemarks() + '", "rating":' + self.courseRating() + '}';
+        var body = {
+			name: self.courseName(),
+			date: self.courseDate(),
+			instructor: self.courseInstructor(),
+			studentname: self.studentName(),
+			grade: self.studentGrade(),
+			remarks: self.courseRemarks(),
+			rating: self.courseRating()
+		};
 
         $.ajax({
           type: "POST",
           url: self.url,
-          data: body,
+          data: JSON.stringify(body),
           contentType: "application/json"
       }).done(function() {
         self.courseName('');
